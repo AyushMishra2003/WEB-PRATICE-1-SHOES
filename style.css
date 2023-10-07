@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    gap: 16rem;
+}
+.logo img{
+    width: 4rem;
+    /* transform: rotate(340deg); */
+    transform: rotate(-20deg);
+}
+nav{
+    display: flex;
+    gap: 2rem; 
+}
+li{
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+li a:hover{
+    color:cadetblue;
+}
+.icon{
+    display: flex;
+    gap: 1rem;
+}
+/* MAIN */
+main{
+   display: flex;
+   align-items: center;
+   justify-content: center;   
+   padding-top: 6rem;
+   gap: 17rem;
+   /* gap: 15rem; */
+}
+.maintext{
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    gap: 0.5rem;
+}
+.maintextheading1{
+    font-size: 3rem;
+    background:linear-gradient(to right,#F31206,#D64F04);
+   -webkit-text-fill-color: transparent;
+   -webkit-background-clip:text;
+
+}
+.maintextheading2{
+    font-size: 3rem;  
+    font-weight: 600;
+    background-image: linear-gradient(to right,#DA1108,#DD8C55,#A40597);
+    /* background: linear-gradient(to right,#); */ 
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+   
+}
+.maintext p{
+    font-weight: 600;
+}
+.learnmore{
+    background-color: red;
+    background:linear-gradient(to right,#F50A00,#D14F0A,#7A207B);
+    width: fit-content;
+    color: white;
+    padding: 6px 15px;
+    border: none;
+    border-radius: 0.2rem;
+}
+.shoeimage{
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+} 
+.shoeimage img{
+    border-radius: 0.5rem;
+}
+.topimage{
+    display: flex;
+    align-items: flex-end;
+    gap: 0.5rem;
+}
+.topfirst img{
+    width:  7rem;
+}
+.topsecond img{
+    width: 8rem;
+    height: 13rem;
+    border-radius: 0.6rem;
+}
+.bottomimage{
+    transform: rotate(360deg);
+}
+.bottomimage img{
+    width: 16rem;
+}
+/* FOOT */
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 7rem;
+}
+.footlogo img{
+    width: 4rem;
+}
+.footcopyright{
+    font-weight: 600;
+}
+.showimagelink{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footname{
+    background-image: linear-gradient(to right,#BA4E39,#F4BB94,#853E85);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    font-size: 1.5rem;  
+}
+
+/*     MEDIA  QUERY */
+
+@media  screen and (max-width:1440px) {
+    header{
+        gap: 8rem;
+    }  
+    main{
+        gap: 2rem;
+    }  
+    footer{
+        padding-top: 13rem;
+    }
+}
+@media screen and (max-width:1024px) {
+    header{
+        /* border:2px solid red; */
+        gap: 7rem;
+    }
+    nav{
+        gap: 0.5rem;
+    }
+    .icon{
+        gap: 0.5rem;
+    }
+    li a{
+        font-size: 0.9rem;
+    }
+    main{
+        gap: 5rem;
+        width: 40em;
+        padding-top: 10rem;
+    }
+    .maintext{
+        width: 20rem;
+        /* border: 2px solid red; */
+    }
+    .maintextheading1{
+        font-size: 2rem;
+    }
+    .maintextheading2{
+        font-size: 2rem;
+    }
+    .maintext p{
+        font-size: 0.9rem;
+    }
+    .shoeimage{
+         gap: 1rem;
+    }
+    .topfirst img{
+        width: 6rem;
+    }
+    .topsecond img{
+      height: 10rem;
+    }
+    .bottomimage img{
+        width: 14rem;
+    }
+    .showimagelink{
+        gap: 1rem;
+    } 
+    footer{
+        padding-top: 10rem;
+    }
+}
+
+@media screen and (max-width:768px){
+    header{
+        gap: 0.4rem;
+    }
+    .logo img{
+        width: 3rem;
+    }
+    nav{
+        gap: 0.3rem;
+    }
+    li a{
+        font-size: 0.6rem;
+    }
+    .icon{
+        gap: 0.2rem;
+    }
+    main{
+        flex-direction: column-reverse;
+        padding: 6rem;
+    }
+    .maintext{
+        /* border: 2px solid red; */
+        width: 13rem;
+    }
+    footer{
+        padding-top: 0rem;
+    }
+}
+
+@media  screen and (max-width:425px) {
+    footer{
+        flex-direction: column;
+    }
+    
+}
